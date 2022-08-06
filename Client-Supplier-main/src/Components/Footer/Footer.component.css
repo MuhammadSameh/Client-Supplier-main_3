@@ -1,0 +1,30 @@
+.first, .second{
+    margin-top: 1rem;
+}
+.second{
+    margin-bottom: 1rem;
+}
+.first a .bi-facebook{
+    color: blue;
+}
+.first a .bi-linkedin{
+    color: rgb(10, 144, 207);
+}
+.first a .bi-twitter{
+    color: rgb(76, 195, 246);
+}
+.first a .bi-youtube{
+    color: red;
+}
+.first a,.second a{
+    margin: 5px;
+    font-size: .8rem;
+}
+.second a{
+    font-size: .5rem;
+    text-decoration: none;
+    color: rgb(80, 78, 78);
+}
+.second a:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+}
+
+.card, .card-img{
+    border: 0 ;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    background-position-x: 0;
+    background-position-y: 0;
+    background-attachment:scroll;
+}
+
+.card-title{
+    font-weight: bolder;
+}
+
+.divText{
+    font-weight: 800;
+    margin:10% 10%;
+    font-size: .8rem;
+    width: 35%;
+}
+
+.colWhy{
+    font-weight: 900;
+    line-height: 2.5rem;
+    font-size: 2.6rem;
+}
+.container , .row{
+    max-width: 100%;
+    font-size: .7rem;
+    font-weight: 900px;
+}
+.containerPartTwo{
+    padding: 70px;
+    background-color: yellow;
+    line-height: 25px;
+}
+.bi{
+    font-size: 3.5rem;
+}
+.row h5{
+    margin-top:25px ;
+}
+iframe{
+    display: flex;
+    border-radius: 5px;
+    margin:10% 20%;
+    min-width: 650px;
+}
+.containerPartFour{
+    background-image: url("https://a-cloud.b-cdn.net/media/iW=5000&iH=any/0709c0311213a836ca4a768d48f76ea5.jpg ");
+    text-align: center;
+    padding:20px 0;
+}
+
+.tabok{
+    color: #fff;
+}
+
+.containerPartFour h2{
+    font-size: 2.3rem;
+    font-weight: 900;
+}
+.containerPartFour div{
+    width: 50%;
+    margin-left: 25%;
+    padding-top: 30px;
+}
+.containerPartFive{
+    background-color: rgb(242, 238, 238);
+    padding: 25px 0;
+}
+#ourTeam{
+    margin-left: 27%;
+    width: 45%;
+}
+.containerPartFive p{
+    color: #000;
+    padding:15px 0;
+    font-size: 14px;
+    line-height: 1.7rem;
+}
+.cardThree{
+    border-radius: 5px;
+    text-align: start;
+}
+.cardThree div span{
+    font-size: .7rem;
+    font-weight: 900;
+    padding: 10px;
+}
+.cardThree div p{
+    font-size: .8rem;
+    padding: 10px;
+    letter-spacing: .1rem;
+}
+.cardThree div p a{
+    text-decoration: none;
+    color: #000;
+}
+.cardThree div p a:hover{
+    text-decoration: underline;
+}
+
+.containerPartSix .row div p{
+    font-size: .7rem;
+    letter-spacing: .1rem;
+    margin: 0 100px 20px 50px;
+}
+.containerPartSix .row div h4{
+margin: 100px 0 50px 50px;
+font-size: 2.8rem;
+}
+
+.containerPartSix .row div ul{
+    margin: 0 100px 50px 20px;
+}
+.containerPartSix .row div ul li{
+    color: rgb(131, 131, 131);
+    line-height: 2.5rem;
+    padding: 0;
+}
+
+.btn-primary {
+    margin:0 0 20px 45px;
+    background-color: yellow;
+    border: 2px solid yellow;
+}
+.btn-primary a{
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 1px;
+    font-size: .7rem;
+    font-weight: 600;
+}
+.btn-primary a:hover{
+    color: #fff;
+}
+.btn-primary:hover{
+    background-color: #000;
+    border: 2px solid #000;
+}
+
+.containerPartSeven p{
+    text-align: center;
+}
+
+.conSeven{
+    border: 1px solid #000;
+    border-radius: 7px;
+    margin: 20px 30px;
+    width: 30%;
+    padding: 20px;
+}
+
+ .conSeven .card div p{
+   letter-spacing: 1px;
+   color: rgb(116, 116, 116);
+   font-size: .7rem;
+   font-weight: 540;
+   line-height: 1rem;
+ }
+ .conSeven .card div span{
+   letter-spacing: 1px;
+   color:#000;
+   display: block;
+   margin: 10px 0  0 0;
+   font-size: .8rem
+ }
+ .CBtn{
+    font-size: .7rem;
+    background-color: yellow;
+    padding: 7px 25px;
+    margin:10px 5px 10px 10px;
+    border-radius: 5px;
+    border: 1px solid yellow;
+ }

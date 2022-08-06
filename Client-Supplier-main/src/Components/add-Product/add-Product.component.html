@@ -1,0 +1,58 @@
+<form (ngSubmit)="OnSubmit()">
+  <div class="mb-3">
+    <input placeholder="Name" type="text" name="Name" class="form-control" [(ngModel)]="product.name">
+  </div>
+
+  <div class="mb-3">
+    <input placeholder="Description" type="text" name="disciption" class="form-control" [(ngModel)]="product.description">
+  </div>
+
+  <div class="mb-3">
+    <input placeholder="Price" type="number" name="price" [(ngModel)]="inventory.price" class="form-control">
+  </div>
+
+  <div class="mb-3">
+    <select class="form-select" #category aria-label="Default select example" (change)="OnParentChange(category.value)">
+      <option *ngFor="let item of categories" [value] = "item.categoryId">
+        {{item.name}}
+      </option>
+    </select>
+  </div>
+
+  <div class="mb-3" [hidden]="!showSubCategory">
+    <select #sub class="form-select" name="category" aria-label="Default select example" [(ngModel)]="product.categoryId">
+      <option *ngFor="let item of subCategories" [value] = "item.categoryId">
+        {{item.name}}
+      </option>
+    </select>
+  </div>
+
+  <div class="mb-3">
+    <select #brand class="form-select" name="brand" aria-label="Default select example" [(ngModel)]="product.brandId">
+      <option *ngFor="let item of topBrands"  [value] = "item.brandId">
+        {{item.name}}
+      </option>
+    </select>
+  </div>
+
+  <div class="input-group mb-3">
+    
+    <input placeholder="Size" type="text" name="size" [(ngModel)]="inventory.size" class="form-control">
+
+    <input placeholder="Color" type="text" name="color" [(ngModel)]="inventory.color" class="form-control">
+  </div>
+
+
+  <div class="mb-3">
+    <input placeholder="Quantity" type="number" name="quantity" [(ngModel)]="inventory.quantity" class="form-control">
+  </div>
+
+  <div class="mb-3">
+    <div *ngFor="let item of numberArr" class="input-group">
+      <input type="file" #file class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload" (change)="UploadImages(file)">
+      <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04" (click)="AddAnotherPic()">Button</button>
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

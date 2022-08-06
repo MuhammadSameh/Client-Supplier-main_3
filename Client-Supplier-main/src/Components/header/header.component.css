@@ -1,0 +1,18 @@
+*{
+    font-size: .8rem;
+    font-weight: bold;
+    background-color: #fff;
+    }
+    .container .collapse ul{
+    margin-left: 30%;
+    }
+    
+    .container .collapse ul li a{
+    color: #000;
+    }
+    .container .collapse ul li a:hover{
+    color: rgb(139, 138, 138);
+    }
+    /* .navbar{
+        position: fixed;
+    } */

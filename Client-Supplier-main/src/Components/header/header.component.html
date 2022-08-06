@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img  class="imgSell" src="https://a-cloud.b-cdn.net/media/iW=119&iH=61&oX=0&oY=5&cW=119&cH=50/36a54b72ba8002746d087f5f63c4bd5f.png"
+      alt="sell on noon">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item ">
+          <a class="nav-link" aria-current="page" routerLink="/Home">Home</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" aria-current="page" routerLink="/Register" [hidden]="isLogged">Register</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" routerLink="/Login" routerLinkActive="active" [hidden]="isLogged">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/FAQ">FAQs</a>
+        </li>
+        <li class="nav-item">
+          <button class="btn" type="button" (click)="Logout()" [hidden]="!isLogged">Logout</button>
+        </li>
+        <li class="nav-item ">
+          <a class="btn" routerLink="/Add" role="button">Add Product</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
