@@ -30,10 +30,10 @@ JSON.stringify(product), this.httpOption).pipe(
   })
 );
 }
-updateProduct(productId:number, product: IProduct){
-
+updateProduct(productId:number, product: IProduct): Observable<any>{
+  return this.httpClient.post(`${environment.APIBase}/Inventory/UpdateProduct`,JSON.stringify(product), this.httpOption)
 }
 deleteProduct(productId:number){
-
+  return this.httpClient.delete(`${environment.APIBase}/Inventory/DeleteProduct/${productId}`, this.httpOption)
 }
 }
