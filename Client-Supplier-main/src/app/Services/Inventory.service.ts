@@ -21,9 +21,6 @@ export class InventoryService {
     }
    }
 
-   getInventoriesForProduct(productId:number){
-
-   }
 
    getInventory(inventoryId: number){
 
@@ -63,8 +60,21 @@ export class InventoryService {
     .get<InventoryDto[]>(`${environment.APIBase}/inventory/Search/${name}`,this.httpOption);
    }
 
+   getInventoriesForProduct(productId:number):Observable<InventoryDto[]>{
+    return this.httpClient
+    .get<InventoryDto[]>(`${environment.APIBase}/inventory/GetInventoriesByProduct/${productId}`,this.httpOption)
+   }
+
    updateSubjectList(list:InventoryDto[]){
     this.productsListSubject.next(list);
    }
+
+  getItemsSoldForSupplier(supplierInfoId:number):Observable<InventoryDto[]>{
+    return this.httpClient.get<InventoryDto[]>(`${environment.APIBase}/Order/OrdersForSupplier/${supplierInfoId}`,this.httpOption);
+  }
+
+  totalRevenueForSupplier(supplierInfoId:number):Observable<number>{
+    return this.httpClient.get<number>(`${environment.APIBase}/Order/${supplierInfoId}`,this.httpOption);
+  }
 
 }

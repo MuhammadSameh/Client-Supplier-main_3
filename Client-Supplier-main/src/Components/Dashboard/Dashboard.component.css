@@ -1,3 +1,82 @@
-mat-grid-tile {
-    background-color: #f5f7fa
+.dashboard .dropdown button
+{
+    margin-bottom: 10px;
+}
+.gains h1{
+    font-family: sans-serif;
+    font-size: 23px;
+}
+.gains span{
+    color :rgb(83, 83, 83)
+}
+
+.commentReview{
+
+}
+.commentReview .commentReviewContainer{
+    height: 150px;
+    background-color: #eee9;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 19px;
+    box-shadow: 5px 7px 13px #c7c2c2;
+    margin: 0 0 30px 0;
+}
+.commentReviewContainer .comment{
+    padding: 11px 8px 0px 4px;
+    font-family: sans-serif;
+}
+.commentReviewContainer .Reviews{
+    padding: 18px 29px 2px 8px;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+.commentReviewContainer .Reviews span{
+ padding-left: 15px;
+    color: rgb(220, 198, 0);
+}
+
+table {
+    width: 100%;
+  }
+  
+  tr.example-detail-row {
+    height: 0;
+  }
+  
+  tr.example-element-row:not(.example-expanded-row):hover {
+    background: whitesmoke;
+  }
+  
+  tr.example-element-row:not(.example-expanded-row):active {
+    background: #efefef;
+  }
+  
+  .example-element-row td {
+    border-bottom-width: 0;
+  }
+  
+  .example-element-detail {
+    overflow: hidden;
+    display: flex;
+  }
+  
+  .example-element-diagram {
+    width: 100px;
+    margin:2px;
+    height: 100px;
+  }
+  
+  .example-element-symbol {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: normal;
+  }
+  
+  .example-element-description {
+    padding: 16px;
+  }
+  
+  .example-element-description-attribution {
+    opacity: 0.5;
   }

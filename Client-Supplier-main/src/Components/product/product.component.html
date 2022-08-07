@@ -20,14 +20,21 @@
     </h5>
 
     <div class="d-grid gap-2 my-2">
-
-      <a [routerLink]="['/Variation', product.productId]" class="btn btn-warning bold-btn">add variation</a>
+      <div class="btn-group" role="group" aria-label="Basic example">
+      <a [routerLink]="['/Variation', product.productId]" class="btn btn-warning bold-btn white">add variation</a>
+      <a (click)="ShowRelatedProducts(product.productId)" class="btn btn-warning bold-btn">Show Variations</a>
+      </div>
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <a (click)="Update()" class="btn btn-info bold-btn">Update</a>
+        <a (click)="UpdateWithVariation()" class="btn btn-info bold-btn">Update With Variation</a>
+      </div>
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <a (click)="Delete(product.inventoryId)" class="btn btn-danger bold-btn">Delete</a>
+      <a (click)="DeleteWithVariation(product.productId)" class="btn btn-danger bold-btn">Delete With Variation</a>
+      </div>
 
     </div>
-    <a (click)="Delete(product.inventoryId)" class="btn btn-danger bold-btn">Delete</a>
-    <a (click)="Update()" class="m-1 btn btn-info bold-btn">Update</a>
-    <a (click)="Delete(product.inventoryId)" class="btn btn-danger bold-btn">Delete With Variation</a>
-    <a (click)="Update()" class="m-1 btn btn-info bold-btn">Update With Variation</a>
+
     
 
   </div>

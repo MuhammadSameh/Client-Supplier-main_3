@@ -1,3 +1,4 @@
+import { NgLocaleLocalization } from '@angular/common';
 import { Component, DoCheck, OnInit } from '@angular/core';
 import { Route, Router } from '@angular/router';
 import { AuthService } from 'src/app/Services/Auth.service';
@@ -28,6 +29,10 @@ export class HeaderComponent implements OnInit, DoCheck {
     this.authService.logout();
     this.isLogged = false;
     this.router.navigate(['/Login'])
+  }
+
+  goToProducts(){
+    this.router.navigate(['Home',`${localStorage.getItem("SupplierInfoId")}`])
   }
 
 }

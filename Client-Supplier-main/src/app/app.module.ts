@@ -25,6 +25,8 @@ import { SearchComponent } from 'src/Components/Search/Search.component';
 import { DashboardComponent } from 'src/Components/Dashboard/Dashboard.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { ProductDialogComponent } from 'src/Components/Product-dialog/Product-dialog.component';
+import {MatTableModule} from '@angular/material/table';
 
 
 @NgModule({
@@ -41,7 +43,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     AddVariationComponent,
     DeleteConfirmationDialogComponent,
     SearchComponent,
-    DashboardComponent
+    DashboardComponent,
+    ProductDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -55,7 +58,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatIconModule,
     MatToolbarModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    MatTableModule,
   ],
   providers: [  
     { provide: MAT_DIALOG_DATA, useValue: {} },

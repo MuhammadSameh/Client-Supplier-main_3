@@ -1,0 +1,38 @@
+<form (ngSubmit)="OnSubmit()">
+  <div class="mb-3">
+    <input placeholder="Name" type="text" name="Name" class="form-control" [(ngModel)]="product.name">
+  </div>
+
+  <div class="mb-3">
+    <input placeholder="Description" type="text" name="disciption" class="form-control" [(ngModel)]="product.description">
+  </div>
+
+ 
+
+  <div class="mb-3">
+    <select class="form-select" #category aria-label="Default select example" (change)="OnParentChange(category.value)">
+      
+      <option *ngFor="let item of categories" [value] = "item.categoryId" [selected]="item.categoryId == product.categoryId">
+        {{item.name}}
+      </option>
+    </select>
+  </div>
+
+  <div class="mb-3">
+    <select #sub class="form-select" name="category" aria-label="Default select example" [(ngModel)]="product.categoryId">
+      <option *ngFor="let item of subCategories" [value] = "item.categoryId">
+        {{item.name}}
+      </option>
+    </select>
+  </div>
+
+  <div class="mb-3">
+    <select #brand class="form-select" name="brand" aria-label="Default select example" [(ngModel)]="product.brandId">
+      <option *ngFor="let item of topBrands"  [value] = "item.brandId">
+        {{item.name}}
+      </option>
+    </select>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
